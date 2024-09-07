@@ -4,7 +4,7 @@ import axios from "../../axios";
 export type Movie = {
     id: string;
     name: string;
-    postar_path: string;
+    poster_path: string;
     backdrop_path: string;
 }
 
@@ -18,7 +18,7 @@ export const useProps = (fetchUrl: string) => {
             const movies = request.data.results.map((movie: Movie) => ({
                 id: movie.id,
                 name: movie.name,
-                postar_path: movie.postar_path,
+                poster_path: movie.poster_path,
                 backdrop_path: movie.backdrop_path,
             }));
             setMovies(movies);
