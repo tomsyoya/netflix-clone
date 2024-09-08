@@ -4,7 +4,6 @@ import { Banner } from "./components/Banner";
 
 function App() {
   return (
-   // 追加箇所
     <div className="App">
       <Banner />
       <Row
